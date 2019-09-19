@@ -1,2 +1,1 @@
-# iOS8-Design-Patterns-Planets
-Design patterns
+# ios-guided-project-planets-design-patterns
