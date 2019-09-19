@@ -8,6 +8,17 @@
 
 import Foundation
 
+// Facade Pattern
+// Cleaning up the interface or repacking APIs to make it easier to use
+// or self contained
+
+// API we expose is hard to use
+// planetsWithoutPluto and planetsWithPluto
+
+// Easy APIs
+// planets
+
+
 class PlanetController {
     var planetsWithoutPluto = [
         Planet(name: "Mercury", imageName: "mercury"),
