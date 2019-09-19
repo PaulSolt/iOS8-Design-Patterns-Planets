@@ -17,13 +17,27 @@ class SettingsViewController: UIViewController {
         updateViews()
     }
     
+    deinit {
+        print("SettingsViewController.deinit")
+    }
+    
     private func updateViews() {
         let userDefaults = UserDefaults.standard
         shouldShowPlutoSwitch.isOn = userDefaults.bool(forKey: .shouldShowPlutoKey)
+        
     }
+    
+    private func sendPlutoHasChangedNotification() {
+        
+        let notification = Notification(name: .shouldShowPlutoChanged)
+        NotificationCenter.default.post(notification) //.init(name: .shouldShowPlutoChanged))
+    }
+    
     
     @IBAction func changeShouldShowPluto(_ sender: UISwitch) {
         let userDefaults = UserDefaults.standard
         userDefaults.set(sender.isOn, forKey: .shouldShowPlutoKey)
+        
+        sendPlutoHasChangedNotification()        
     }
 }

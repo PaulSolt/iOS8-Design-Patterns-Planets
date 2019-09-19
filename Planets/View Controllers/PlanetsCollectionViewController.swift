@@ -16,6 +16,27 @@ class PlanetsCollectionViewController: UICollectionViewController {
     
     let planetController = PlanetController()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // add observer for plutoChanged notification
+        NotificationCenter.default.addObserver(self, selector: #selector(refreshViews(notification:)), name: .shouldShowPlutoChanged, object: nil)
+    }
+    
+    @objc func refreshViews(notification: Notification) {
+        // update the display ...
+        print("Updated pluto setting: \(planetController.shouldShowPluto)")
+        collectionView.reloadData()
+    }
+    
+    deinit {
+        print("deinit")
+        // Sometimes you need to unregister from a notification
+        // On iOS9+ you don't need to to do this with the addObserver(selector) Notification method
+        // But you do need to do this with the block (closure method)
+        NotificationCenter.default.removeObserver(self, name: .shouldShowPlutoChanged, object: nil)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView?.reloadData()

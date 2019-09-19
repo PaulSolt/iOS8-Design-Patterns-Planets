@@ -18,6 +18,7 @@
 		9DDBBD262113678F00A55978 /* PlanetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD252113678F00A55978 /* PlanetsCollectionViewController.swift */; };
 		9DDBBD2B2113748200A55978 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD2A2113748200A55978 /* SettingsViewController.swift */; };
 		9DDBBD2D211376BE00A55978 /* SettingsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDBBD2C211376BE00A55978 /* SettingsKeys.swift */; };
+		BDD0CB6B2333F14800F02CA8 /* NSNotification+Pluto.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD0CB6A2333F14800F02CA8 /* NSNotification+Pluto.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		9DDBBD252113678F00A55978 /* PlanetsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsCollectionViewController.swift; sourceTree = "<group>"; };
 		9DDBBD2A2113748200A55978 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9DDBBD2C211376BE00A55978 /* SettingsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsKeys.swift; sourceTree = "<group>"; };
+		BDD0CB6A2333F14800F02CA8 /* NSNotification+Pluto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Pluto.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			children = (
 				9DDBBD062113609700A55978 /* AppDelegate.swift */,
 				9DDBBD2C211376BE00A55978 /* SettingsKeys.swift */,
+				BDD0CB6A2333F14800F02CA8 /* NSNotification+Pluto.swift */,
 				9DDBBD1A211360D500A55978 /* Model */,
 				9DDBBD1C211360E000A55978 /* Model Controller */,
 				9DDBBD272113679300A55978 /* View Controllers */,
@@ -202,6 +205,7 @@
 				9DDBBD19211360D100A55978 /* Planet.swift in Sources */,
 				9DDBBD2B2113748200A55978 /* SettingsViewController.swift in Sources */,
 				9DDBBD2D211376BE00A55978 /* SettingsKeys.swift in Sources */,
+				BDD0CB6B2333F14800F02CA8 /* NSNotification+Pluto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
