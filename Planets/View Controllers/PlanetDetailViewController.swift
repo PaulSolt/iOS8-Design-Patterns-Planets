@@ -42,7 +42,7 @@ class PlanetDetailViewController: UIViewController {
         super.encodeRestorableState(with: coder)
         // IMPORTANT: We want this to be fast, we don't duplicate data
         
-        // Planet -> Data -> Encode
+        // Planet -> (Codable) -> Data -> (NSSecureCoding) -> Encode
         
         guard let planet = planet else { return }
         let planetData = try? PropertyListEncoder().encode(planet)

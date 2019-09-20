@@ -9,6 +9,18 @@
 import UIKit
 
 struct Planet: Codable {
+//class Planet: NSCoding, Codable {
+
+    // NSCoding -> NSCoder
+//     Requires we use a class, not a Swift struct
+//    func encode(with aCoder: NSCoder) {
+//        <#code#>
+//    }
+//
+//    required init?(coder aDecoder: NSCoder) {
+//        <#code#>
+//    }
+    
     var name: String
     var imageName: String
     
@@ -20,4 +32,5 @@ struct Planet: Codable {
         self.name = name
         self.imageName = imageName
     }
+
 }
